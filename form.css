@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    font-family: Arial;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.7;
+    
+}
+.logo{
+    font-size: 24px;
+    text-transform: uppercase; /* transformar em maiúscula */
+    letter-spacing: 4px; /* Comportamento do entre caracteres de texto */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, rgb(209, 47, 201), rgb(26, 1, 41));
+    height: 8vh;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li{
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+main{  
+    background: url("https://i.pinimg.com/originals/53/aa/f6/53aaf6011bba6d6bb0499e1eef12c26d.jpg") no-repeat
+    center center;
+    height: 92vh;
+    background-size: cover;
+}
+.box{
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 70%;
+    color: white;
+}
+fieldset{
+    border: 3px solid #230327;
+}
+legend{
+    /*background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220)); */
+    background: #230327;
+    border: 2px solid #6b105d ;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    letter-spacing: 2px;
+}
+#genero{
+    background: #230327;
+    border-radius: 5px;  
+    margin-left: 10%;
+}
+#plataforma{
+    background: #230327;
+    border-radius: 5px;   
+    margin-left: 10%;
+}
+#idioma{
+    background: #230327;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+#classIndicativa{
+    background: #230327;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+#opcao{
+    font-size: 15px; 
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+.labelModoJogo{
+    font-size: 16px;
+}
+#labelNome{
+    width: 88%;
+    margin-left: 6%;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    margin-left: 6%;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 14px;
+    color: #b942c9;
+}
+select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background:#000;
+    background-image:none;
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+select::-ms-expond{
+    display: none;
+}
+.select{
+    position: relative;
+    display: flex;
+    right: 5%;
+    width: 100%;
+    height: 2em;
+    line-height: 2;
+    overflow: hidden;
+    border-radius: .25em;
+}
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 1em;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.select:hover::after{
+    color: #410829;
+}
+input[type=checkbox]{
+    width:2%;
+    margin-left: 40%;
+}
